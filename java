@@ -1,112 +1,24 @@
-
-<b:if cond='data:blog.pageType == &quot;index&quot;'>
 <script type='text/javascript'>
 /*<![CDATA[*/
 var postperpage=5;var numshowpage=4;var upPageWord ='السابق';var downPageWord ='التالي';var urlactivepage=location.href;var home_page="/";
 /*]]>*/
 </script>
-<script src='https://cdn.rawgit.com/mohammedxx/madad2/e5a01ecf/unlipage.js' type='text/javascript'/>
-</b:if>
-<b:if cond='data:blog.pageType == &quot;error_page&quot;'>
-<style type='text/css'>
-  .header-top,.header,.main-menu,.wrapper,#breakingnews,.copyrights,.sub-footer{
-display:none;
-}
-.error-container .top-bar{height:30px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0;background-clip:padding-box;border-top:thin solid #eaeae9;border-bottom:thin solid #ddd;background:linear-gradient(#e7e7e6,#e0e0e0)}.error-container .circles{margin:5px 12px}.error-container .circle{height:10px;width:10px;display:inline-block;border-radius:50%;-webkit-border-radius:50%;-moz-border-radius:50%;background-color:#fff;margin-right:1px}#close-circle{background-color:#ff5c5a}#minimize-circle{background-color:#fdb45c}#maximize-circle{background-color:#1bc656}.errorwrapper{max-width:600px;margin:0 auto;background:#E7E7E7;padding-bottom:70px;border:1px solid #ddd;border-radius:4px}.error-header{margin-top:50px}.error-title{line-height:42px}.error-title span{background:#333;color:#666;padding:30px;font-size:200%;border-radius:100%;}.error-image img{display:block;font-size:72px;font-weight:700;margin:10px auto 40px}.error-container{background:#fafafa;display:table;height:100vh;overflow:hidden;width:100%;}.error404 .anonymous{margin:0 auto 20px;display:block}.error-404{display:table-cell;vertical-align:middle}.error-404 .page-content p{color:#666}.error-title{color:#666;font-size:42px;font-weight:700;text-transform:uppercase;margin:0;text-align:center;line-height:normal;}.search-title{font-size:48px;color:#3f3f46}.page-content,.page-content p{color:#797979;font-size:18px;text-align:center}a.buttonerror {background:#314151;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);color:#fff;font-size:13px;cursor:pointer;margin-right:5px;padding:15px 20px;font-weight:bold;border-radius:4px}#ctforce {position:absolute;right:0;top:-30px;color:transparent}.cpright{opacity:0}
-</style>
-<span id='ctforce'/>
-<div class='error-container'>
-<section class='error-404 not-found text-center'>
-<div class='errorwrapper'>
-<div class='top-bar'>
-<div class='circles'>
-<div class='circle' id='close-circle'>
-</div>
-<div class='circle' id='minimize-circle'>
-</div>
-<div class='circle' id='maximize-circle'>
-</div>
-</div>
-</div>
-<header class='error-header'>
-<h1 class='error-title'>
-خطأ في الرابط</h1>
-</header>
-<div class='page-content'>
-<p>
-هذه الصفحة ليست موجودة , أو قد تم حذفها من قبل أحد مشرفي المدونة</p>
-</div>
-<br/>
-<center>
-<a class='buttonerror waves-effect waves-light' href='/'>الرجوع للصفحة الرئيسية</a></center>
-</div>
-</section>
-</div>
-</b:if>
-
 <script type='text/javascript'>/*<![CDATA[*/
 var linkblog=window.location.protocol+"//"+window.location.host+window.location.pathname+window.location.search;linkblog=encodeURIComponent(linkblog);var twshare="https://twitter.com/intent/tweet?url="+linkblog,fbshare="https://www.facebook.com/sharer/sharer.php?v=4&amp;u="+linkblog,bq=$("blockquote").text();$("blockquote").append('<div class="quote-share"><a target="_blank" href="'+fbshare+"&quote="+bq+'"  class="quote-fb"><i class="fa fa-facebook"></i></a><a target="_blank"  href="'+twshare+"&text="+bq+'" ><i class="fa fa-twitter"></i></a></div>');
 //]]>
 </script>
-
-
- <script type='text/javascript'>
+<script type='text/javascript'>
 //<![CDATA[
 // Loader
 $(document).ready(function(){$("body").removeClass("page-isload"),$("#pagingx").fadeOut(8000),$("#loader").fadeOut(8000)});
 //]]>
 </script>
-<div class='cssload-loader' id='loader'>
-<myloader>
-<div aria-busy='true' aria-label='إنتضر حتى يكتمل التحميل' role='progressbar'/>
-</myloader></div>
-<div class='page-loader' id='pagingx'/>
-<script src='https://cdn.rawgit.com/Dz8Web/cloud-fare/f427ef4a/cloud-fare.js' type='text/javascript'/>
-
-<script src='https://cdn.rawgit.com/Dz8Web/post-number/7a1a0fc4/post-number.js' type='text/javascript'/>
 <script type='text/javascript'>
 //<![CDATA[
 $(function(){$(window).scroll(function(){$(this).scrollTop()>600?$(".back-totop").addClass('arlniain'):$(".back-totop").removeClass('arlniain')}),$(".back-totop").click(function(){return $("html,body").animate({scrollTop:0},600),!1})});
 //]]>
 </script>
-<script>
-//<![CDATA[
-    var container = $('.search-wrapper');
-    $( '.toggle-search' ).on( 'click', function( event ) {
-        $('.search-overlay').toggleClass( 'open' );
-         $('.site').toggleClass( 'open' );
-        container.addClass('active');
-
-    });
-
-    $( '.close' ).on( 'click', function( event ) {
-        $('.search-overlay').removeClass( 'open' );
-        $('.site').removeClass( 'open' );
-        container.removeClass('active');
-
-    });
-	
-//]]>
-</script>
-
-
-
-
-<script>
-$(document).ready(function(){
-    $(&quot;.menudropdown&quot;).click(function(){
-        $(&quot;#LinkList3 ul&quot;).toggle();
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $(&quot;.menudrop&quot;).click(function(){
-        $(&quot;#menu-top ul&quot;).toggle();
-    });
-});
-</script>
-  <script type='text/javascript'>/*<![CDATA[*/
+<script type='text/javascript'>/*<![CDATA[*/
 $(function() {
         "use strict";
         $("#postAD-top")["append"]($("#HTML201"));
@@ -116,39 +28,18 @@ $(function() {
        
 });
 /*]]>*/</script>
-
-<script src='//rawgit.com/abdelalilebbihi/abdou_tech/master/gadget/lazyframe.min.js'/>
-<script>//<![CDATA[
-lazyframe('.card--global');//]]></script>
-
-  
-
-<ul id='scrollToTop'>
-  <li><a href='#top'><i class='fa fa-chevron-up' title='الصعود للاعلى'/></a></li>
-  <li><a href='#bottom'><i class='fa fa-chevron-down' title='النزول للأسفل'/></a></li>
-</ul>
-<div id='top'/>
-<div id='bottom'/>
 <script type='text/javascript'>
 //<![CDATA[
 jQuery(document).ready(function(){var o=220,r=600;jQuery(window).scroll(function(){jQuery(this).scrollTop() > o?jQuery("#scrollToTop").fadeIn(r):jQuery("#scrollToTop").fadeOut(r)})});
 $(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var t=$(this.hash);if(t=t.length?t:$("[name="+this.hash.slice(1)+"]"),t.length)return $("html,body").animate({scrollTop:t.offset().top},600),!1}})});
 //]]>
 </script>
-<b:if cond='data:blog.pageType == &quot;item&quot;'>
 <script type='text/javascript'>
 //<![CDATA[
 // Tombol Reaksi Vicomi
 !function(){var e=document.createElement("script");e.async=!0,e.src="https://assets-prod.vicomi.com/vicomi.js?token=1d852d9a6638475caf87db6cf9dd5255";var c=document.getElementsByTagName("script")[0];c.parentNode.insertBefore(e,c)}();
 //]]>
 </script>
-</b:if>
-<b:if cond='data:view.isPost'>
-<script type='text/javascript'>
-//<![CDATA[
-//]]>
-</script>
-</b:if>
 <script type='text/javascript'>
 // <![CDATA[
 // News Ticker plugin ~ URL: http://jonmifsud.com/open-source/jquery/jquery-webticker
@@ -160,9 +51,6 @@ $(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname
 //]]>
 </script>
 <script>
-/* <![CDATA[ */
-/*]]>*/
-</script>
 <script type='text/javascript'>
 //<![CDATA[	
 
@@ -195,13 +83,6 @@ j = j.replace(a,
 
 //]]>
 </script>
-</b:if>
-<!-- Advinced Blogger -->
-<script type='text/javascript'>
-
-</script>
-<!--intro home-->
-<b:if cond='data:blog.url == data:blog.homepageUrl'>
 <script type='text/javascript'>
 //<![CDATA[
 /*اعدادات السلايدر*/
@@ -212,7 +93,3 @@ var CAROUSEL_NUM = 6; // هنا تتحكم بعدد المواضيع
 var node = document.createElement('script'); node.type = 'text/javascript'; node.async = true; node.src = 'https://rawgit.com/abdelalilebbihi/abdou_tech/master/gadget/slider_star1.js'; var runscript = document.getElementsByTagName('script')[0]; runscript.parentNode.insertBefore(node, runscript);
 //]]>
 </script>
-</b:if>
-<script>$(document).ready(function() {
-$(&#39;.posts-thumb img&#39;).attr(&#39;src&#39;, function(i, src) {return src.replace( &#39;/s640/&#39;, &#39;/h300-w180-no/&#39; );});
-});</script>
