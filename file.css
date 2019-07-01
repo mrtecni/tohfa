@@ -1,1 +1,11 @@
-m
+body {
+	background-image: url(http://www.ar-book.cf/wp-content/uploads/2014/07/bg-1.jpg);
+	color: #700;
+	text-align: center;
+	background-size: cover;
+	background-repeat: all;  
+	}
+	#one p {
+	 padding: 20px;
+
+	}
